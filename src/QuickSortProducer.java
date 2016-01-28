@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class QuickSortProducer implements NextValueProducer {
@@ -12,23 +11,6 @@ public class QuickSortProducer implements NextValueProducer {
 		work.add(temp);
 	}
 
-/*	
-	(defn sort-parts [work]
-			  (lazy-seq
-			    (loop [[part & parts] work] (do (println (str "work='" work "' part='' parts='" parts "'"))
-			      (if-let [[pivot & xs] (seq part)]
-			              (do  (println (str "if-let: true! pivot='" pivot "' xs='" xs "'"))
-			              (let [smaller? #(< % pivot)]
-			                   (recur (list*
-			                           (filter smaller? xs)
-			                           pivot
-			                           (remove smaller? xs)
-			                           parts))))
-			              (when-let [[x & parts] parts]
-			                   (println (str "if-let: false! x='" x "' parts='" parts "'"))
-			                   (cons x (sort-parts parts))))))))
-*/	
-	
 	@Override
 	public Object getNextValue() {
 

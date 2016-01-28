@@ -4,13 +4,6 @@ import java.util.List;
 public class LazySeqMain {
 
 	public static void main(String[] args) {
-/*		LazySequence seq = new LazySequence(new NumberSequenceProducer());
-		
-		for (int i = 0; i < 10; ++i) {
-			System.err.println(seq.getNthElement(i));
-		}
-*/
-		
 		List<Integer> numsToSort = new ArrayList<>();
 		numsToSort.add(2);
 		numsToSort.add(1);
